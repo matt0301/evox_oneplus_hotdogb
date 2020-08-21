@@ -14,6 +14,9 @@ $(call inherit-product, device/oneplus/hotdogb/device.mk)
 # Inherit some common RR stuff.
 $(call inherit-product, vendor/rr/config/common_full_phone.mk)
 
+# Inherit PixelGApps
+$(call inherit-product, vendor/pixelgapps/pixel-gapps.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := rr_hotdogb
 PRODUCT_DEVICE := hotdogb
@@ -29,6 +32,14 @@ RR_BUILDTYPE := Official
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
+
+# Boot Animation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Gapps
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_WIFI_EXT := true
 
 # Build info
 BUILD_FINGERPRINT := "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys"
