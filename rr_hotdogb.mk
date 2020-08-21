@@ -11,11 +11,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from hotdogb device
 $(call inherit-product, device/oneplus/hotdogb/device.mk)
 
-# Inherit some common AOSiP stuff.
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+# Inherit some common RR stuff.
+$(call inherit-product, vendor/rr/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosip_hotdogb
+PRODUCT_NAME := rr_hotdogb
 PRODUCT_DEVICE := hotdogb
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := OnePlus 7T
@@ -23,6 +23,8 @@ PRODUCT_MANUFACTURER := OnePlus
 
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_CHARACTERISTICS := nosdcard
+
+RR_BUILDTYPE := Official
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400

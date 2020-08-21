@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosip_hotdogb.mk
+    $(LOCAL_DIR)/rr_hotdogb.mk
