@@ -386,4 +386,7 @@
          in its natural orientation. If zero, the value of rounded_corner_radius is used. -->
     <dimen name="rounded_corner_radius_bottom">85px</dimen>
 
-</resources>
+    <string name="config_recentsComponentName">com.google.android.apps.nexuslauncher/com.android.quickstep.RecentsActivity</string>
+    <string name="config_secondaryHomeComponent">com.google.android.apps.nexuslauncher/com.android.launcher3.SecondaryDisplayLauncher</string>
+    
+    </resources>
